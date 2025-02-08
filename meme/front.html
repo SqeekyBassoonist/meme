@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="front.css">
+    <script type="module" src="js/front.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <section>
+        <!-- Controls which tabs the viewer can see -->
+        <section id="buttons">
+            <button id="home_button" value="home">
+                Home
+            </button>
+            <button id="age_button"  value="age">
+                Age
+            </button>
+            <button id="search_button" value="search">
+                Search
+            </button>
+            <button id="starred_button" value="starred">
+                Starred
+            </button>
+         </section>
+
+        <section id="left">
+            <section class="tab" id="home">
+                <h2>
+                    Welcome to the Meme Website V6.9!
+                </h2>
+                <p>
+                    Use the age button to sort memes based on how old they are.
+                </p>
+                <p>
+                    Use the search button to search for memes based on phrases. For some unknown reason, dwayne the rock johnson keeps
+                    appearing regardless of what you type in.
+                </p>
+    
+                <p>
+                    Use the starred button to see memes you've favorited while searching.
+                </p>
+    
+                <p>
+                    There will be buttons above a meme for downloading, copying the link, reporting, and favoriting it.
+                </p>
+            </section>
+            <section class="tab" id="age">
+                <h2>Age</h2>
+                <p>
+                    You can sort memes here based on how recently they were downloaded. Use the slider to change how many memes
+                    you want to pop up at once. Use the drop down menu to select what date you want to look from.
+                </p>
+                <form action="./front.html" name="age_submit">
+                    <button>
+                        search
+                    </button>
+                    <input type="date" name="date" id="date">
+                    <input type="range" name="slider" id="slider" min="10" max="50">
+                </form>
+            </section>
+            <section class="tab" id="search">
+                <h2>Search</h2>
+                <form action="" name="search_submit">
+                    <button>
+                        search
+                    </button>
+                    <input type="range" name="search_slider" id="search_slider" min=10 max=50>
+                </form>
+            </section>
+            <section class="tab" id="starred">
+                <h2>Starred Section</h2>
+            </section>
+        </section>
+        
+        <!-- A section that will contain the results from the search, starts hidden as it's only for Age, Search, and Starred -->
+        <section id="results"></section>
+    </section>
+
+
+</body>
+</html>
